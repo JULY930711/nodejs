@@ -1,0 +1,25 @@
+<%- include('parts/html-head')%> <%- include('parts/html-navbar')%>
+
+<div class="container">
+  <h2><%=name%></h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">员工号</th>
+        <th scope="col">姓名</th>
+        <th scope="col">年龄</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(let i of data){%>
+      <tr>
+        <td><%=i.id%></td>
+        <td><%=i.name%></td>
+        <td><%=i.age%></td>
+      </tr>
+      <% }%>
+    </tbody>
+  </table>
+</div>
+
+<%- include('parts/html-scripts')%> <%- include('parts/html-foot')%>

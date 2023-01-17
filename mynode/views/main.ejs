@@ -1,0 +1,15 @@
+<%- include('parts/html-head')%> <%- include('parts/html-navbar')%>
+
+<div class="container">
+  <h1>hello <%-name%></h1>
+  <button class="btn btn-warning" onclick="myfunc()">去那边</button>
+</div>
+
+<%- include('parts/html-scripts')%>
+<script>
+  function myfunc() {
+    location.href = "http://localhost:3001/sales-json";
+  }
+</script>
+
+<%- include('parts/html-foot')%>
